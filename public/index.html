@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="myPage">
+
+    <!-- Sidebar on click
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+            <i class="fa fa-remove"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button">Link 5</a>
+    </nav> -->
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-teal">
+                <!-- <i class="fa fa-home w3-margin-right"> -->
+
+                </i>CROWD</a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+            <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Features</a>
+            <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pricing</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+            <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">College
+                Predictor</a>
+
+            <!-- <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button" title="Notifications">CheckOut <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button">College Predictor</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                </div>
+            </div> -->
+            <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i
+                    class="fa fa-search"></i></a> -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team" class="w3-bar-item w3-button">Team</a>
+            <a href="#work" class="w3-bar-item w3-button">Work</a>
+            <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <!-- <a href="#" class="w3-bar-item w3-button">Search</a> -->
+        </div>
+    </div>
+
+    <!-- Image Header -->
+    <div class="w3-display-container w3-animate-opacity">
+        <img src="photos\everest-4828404_1280.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+        <div class="img-text">
+            <h2> Unleash Your <span>Potential</span> with CROWD</h2>
+            <h4>for school going and pre-college students</h4>
+        </div>
+        <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+            <button-1 onclick="document.getElementById('id01').style.display='block'"
+                class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">JOIN NOW</button>
+
+                <style>
+                    .img-text {
+
+                        position: absolute;
+                        top: 25%;
+                        left: 15%;
+                        text-align: center;
+                        color: #fff;
+                        padding: 40px;
+                    }
+
+                    .img-text h2 {
+
+                        font-size: 40px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+
+                    }
+
+                    .img-text h2 span {
+
+                        color: aqua;
+
+                    }
+
+                    .img-text h4 {
+
+
+                        color: aqua;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-size: 16px;
+
+
+                    }
+
+                    button-1 {
+                        animation: shaking 0.2s;
+                        animation-iteration-count: infinite;
+                    }
+
+                    button-1:hover {
+                        animation: 0;
+                    }
+
+                    @keyframes shaking {
+                        0% {
+                            transform: translate(1px, 1px) rotate(0deg);
+                        }
+
+                        10% {
+                            transform: translate(-1px, -2px) rotate(-1deg);
+                        }
+
+                        20% {
+                            transform: translate(-3px, 0px) rotate(0deg);
+                        }
+
+                        30% {
+                            transform: translate(3px, 2px) rotate(-1deg);
+                        }
+
+                        40% {
+                            transform: translate(1px, -1px) rotate(0deg);
+                        }
+
+                        50% {
+                            transform: translate(-1px, 2px) rotate(-1deg);
+                        }
+
+                        60% {
+                            transform: translate(-3px, 1px) rotate(0deg);
+                        }
+
+                        70% {
+                            transform: translate(3px, 1px) rotate(-1deg);
+                        }
+
+                        80% {
+                            transform: translate(-1px, 1px) rotate(0deg);
+                        }
+
+                        90% {
+                            transform: translate(1px, 2px) rotate(-1deg);
+                        }
+
+                        100% {
+                            transform: translate(1px, -2px) rotate(0deg);
+                        }
+                    }
+                </style>
+        </div>
+    </div>
+
+
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-top">
+            <header class="w3-container w3-teal w3-display-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+                <h2>Be a part of our family at 0 cost</h2>
+                <!-- <h5>Waiting for you<i class="fa fa-heart"></i></h5> -->
+            </header>
+            <div class="w3-container">
+                <!-- <p>Cool huh? Ok, enough teasing around..</p> -->
+                <p>Join Our <a class="w3-text-teal" href="#">Telegram Channel</a> Now!</p>
+            </div>
+            <footer class="w3-container w3-teal">
+                <!-- <p>join our telegram channel</p> -->
+                <p>Book your <a href="#contact">Free Session</a> Now!</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Team Container -->
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+        <h2>OUR TEAM</h2>
+        <p>Meet the team</p>
+
+        <div class="w3-row"><br>
+
+            <div class="w3-quarter">
+                <img src="photos/dev.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Ashutosh Dubey</h3>
+                <p></p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="photos/dev2.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Gaurav Meena</h3>
+                <p></p>
+            </div>
+
+            <!-- <div class="w3-quarter">
+                <img src="dev.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Jan Ringo</h3>
+                <p>Boss man</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="dev.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Kai Ringo</h3>
+                <p>Fixer</p>
+            </div> -->
+
+        </div>
+    </div>
+
+    <!-- Work Row -->
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+        <div class="w3-quarter">
+            <h2>Features</h2>
+            <p>Welcome to our family, where we are dedicated to empowering individuals like
+                you to discover and navigate the path towards success. Whether you're seeking career guidance, personal
+                development, or simply looking for inspiration, our platform offers a wealth of features designed to
+                guide and support you every step of the way. Here are just a few of the key features that make our
+                website a valuable resource:</p>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="photos/light-bulb-3535435_1280.jpg" alt="Snow" style="width:100%">
+                <div class="w3-container">
+                    <h3>College Predictor</h3>
+                    <!-- <h4>Trade</h4> -->
+                    <p> Unlock College Possibilities with our JEE Mains College Predictor. Find your best-fit
+                        institutions, predict admission chances, and embark on an exciting educational journey towards
+                        success.</p>
+                    <!-- <p>Blablabla</p>
+                    <p>Blablabla</p>
+                    <p>Blablabla</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="photos/toddler-hand-4867454_1280.jpg" alt="Lights" style="width:100%">
+                <div class="w3-container">
+                    <h3>Counselling Support</h3>
+                    <!-- <h4>Trade</h4> -->
+                    <p> Our 24/7 Counseling Support offers compassionate guidance, confidential conversations, and
+                        practical tools. Gain emotional support, overcome challenges, and find solace on your path to
+                        well-being and personal growth. </p>
+                    <!-- <p>Blablabla</p>
+                    <p>Blablabla</p>
+                    <p>Blablabla</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="photos/time-3096535_1280.jpg" alt="Mountains" style="width:100%">
+                <div class="w3-container">
+                    <h3>Study Planner</h3>
+                    <!-- <h4>Trade</h4> -->
+                    <p>Planner empowers efficient time management, personalized schedules, and task
+                        organization. Achieve academic excellence, stay focused, and unlock your full potential with a
+                        structured and effective approach to studying.</p>
+                    <!-- <p>Blablabla</p>
+                    <p>Blablabla</p>
+                    <p>Blablabla</p> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Container -->
+    <!-- <div class="w3-container" style="position:relative">
+        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+            style="position:absolute;top:-28px;right:24px">+</a>
+    </div> -->
+
+    <!-- Pricing Row -->
+    <div class="w3-row-padding w3-center w3-padding-64 " id="pricing">
+        <h2>PRICING</h2>
+        <p>Choose a pricing plan that fits your needs.</p><br>
+        <div class="w3-third w3-margin-bottom ">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3-theme">
+                    <!-- initialyy it was w3-theme -->
+                    <p class="w3-xlarge ">BASIC</p>
+                    <style>
+                        /* .w3theme {
+                            background-color: #ffdf4f;
+                        } */
+                    </style>
+                </li>
+                <!-- initially this was 16 and not 161 -->
+                <li class="w3-padding-16"><b>10 minute</b>Daily Call Support</li>
+                <li class="w3-padding-16"><b></b>College Predictor</li>
+                <li class="w3-padding-16"><b></b>-</li>
+                <li class="w3-padding-16"><b> </b>-</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-rupees"></i> 0</h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <style>
+                    .w3-padding-161 {
+                        background-color: #ffdf4f;
+                    }
+
+                    .w3-padding-162 {
+                        background-color: crimson;
+                    }
+
+                    .w3-padding-163 {
+                        background-color: chartreuse;
+                    }
+                </style>
+
+                <li class="w3-theme-l5 w3-padding-24">
+                    <!-- <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button> -->
+                    <button href="#">Join Now</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- <style>
+            .silver {
+                background-color: white;
+            }
+
+            .gold {
+                background-color: gold;
+            }
+
+            .platinum {
+                background-color: #e5e4e2;
+            }
+        </style> -->
+
+        <div class="w3-third w3-margin-bottom ">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3theme-l2">
+                    <p class="w3-xlarge">GOLD</p>
+                </li>
+                <style>
+                    .w3theme-l2 {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                </style>
+                <li class="w3-padding-16"><b>2 hr </b>Daily Call Support</li>
+                <li class="w3-padding-16"><b></b> College Predictor</li>
+                <li class="w3-padding-16"><b></b> College PLacement stats</li>
+                <li class="w3-padding-16"><b></b>Added to Whatspp Group</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-rupee"></i>25</h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <!-- <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button> -->
+                    <button>Unavailable Now</button>
+                </li>
+            </ul>
+        </div>
+        <!-- <style>
+            .silver {
+                background-color: #C0C0C0;
+            }
+
+            .gold {
+                background-color: gold;
+            }
+
+            .platinum {
+                background-color: #e5e4e2;
+            }
+        </style> -->
+
+
+        <div class="w3-third w3-margin-bottom">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <!-- this was w3-theme -->
+                <li class="w3-theme">
+                    <p class="w3-xlarge">PLATINUM</p>
+                </li>
+                <style>
+                    /* .w3theme1 {
+                        background-color: chartreuse;
+                    } */
+                </style>
+
+                <li class="w3-padding-16"><b></b>Personal Coach alloted</li>
+                <li class="w3-padding-16"><b></b> College Predictor</li>
+                <li class="w3-padding-16"><b></b>College Placement stats</li>
+                <li class="w3-padding-16"><b></b>Added to Whatspp group</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-rupee"></i>99</h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <!-- <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button> -->
+                    <button>Unavailable Now</button>
+
+                </li>
+            </ul>
+        </div>
+        <!-- <style>
+            .silver {
+                background-color: #C0C0C0;
+            }
+
+            .gold {
+                background-color: gold;
+            }
+
+            .platinum {
+                background-color: #e5e4e2;
+            }
+        </style> -->
+
+    </div>
+
+    <!-- Contact Container -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+        <div class="w3-row">
+            <div class="w3-col m5">
+                <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+                <h3>Address</h3>
+                <!-- <p>Swing by for a cup of coffee, or whatever.</p> -->
+                <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Delhi, INDIA</p>
+                <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+                <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+            </div>
+
+
+            <!-- <div class="login" id="BOOKSLOT">
+                <div class="login-triangle"></div>
+
+                <h2 class="login-header">BOOK A FREE CALL NOW</h2>
+
+                <form class="login-container" action="/sign_up" method="POST">
+
+                    <h2></h2>
+                    <input type="text" class="box" id="name" name="name" placeholder="Name" required>
+                    <br>
+                    <input type="text" class="box" id="email" name="email" placeholder="Email" required>
+                    <br>
+                    <input type="text" class="box" id="phno" name="Phno" placeholder="Mobile" required>
+
+                    <input type="text" class="box" id="password" name="password" placeholder="Password" required>
+
+                    <input type="submit" value="Submit" id="submit">
+
+
+
+                </form>
+
+            </div> -->
+
+
+
+
+
+            <div class="w3-col m7">
+                <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/sign_up" method="POST">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input" id="name" type="text" placeholder="Jacky Kapoor" name="name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input" id="email" type="text" placeholder="jackykapoor@test.com" name="email"
+                            required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Phone NO.</label>
+                        <input class="w3-input" id="phno" type="number" placeholder="+91**********" name="phno"
+                            required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Exam Preparing or Need Guidance Regarding</label>
+                        <input class="w3-input" id="exam" type="text" placeholder="JEE or 10th Boards" name="exam"
+                            required>
+                    </div>
+                    <input class="w3-check" type="checkbox" checked name="Like">
+                    <label>I Like it!</label>
+                    <button type="submit" id="submit" class="w3-button w3-right w3-theme">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="photos/sunset-3689760_1280.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+        <h4>Follow Us</h4>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i
+                class="fa fa-facebook"></i></a>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i
+                class="fa fa-twitter"></i></a>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i
+                class="fa fa-google-plus"></i></a>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i
+                class="fa fa-instagram"></i></a>
+        <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
+                class="fa fa-linkedin"></i></a>
+        <p>Powered by <a href="#home" target="_blank">CROWD</a></p>
+
+        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+            <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
+
+    <!-- <script>
+        // Script for side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "300px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        // Close side navigation
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
